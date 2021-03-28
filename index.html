@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Room Furniture</title>
+  <!--
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  -->
+</head>
+<body>
+  <header class="header">
+    <div class="header__menu-icon">
+      <img src="images/icon-hamburger.svg" alt="mobile menu toggle">
+    </div>
+
+    <a href="#" class="header__logo">
+      <img src="images/logo.svg" alt="Room Logo">
+    </a>
+
+    <nav class="header__nav">
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="overlay"></div>
+  </header>
+  
+  <main class="grid-container">
+
+    <div class="slider__images__container">
+      <div class="slider__images">
+        <div class="image-3 image" id="lastClone"></div>
+        <div class="image-1 image"></div>
+        <div class="image-2 image"></div>
+        <div class="image-3 image"></div>
+        <div class="image-1 image" id="firstClone"></div>
+      </div>
+    </div>
+
+    <div class="slider__arrows">
+      <div class="prev">
+        <img src="images/icon-angle-left.svg" alt="left arrow">
+      </div>
+      <div class="next">
+        <img src="images/icon-angle-right.svg" alt="right arrow">
+      </div>
+    </div>
+
+    <div class="slider__info__container">
+      <div class="slider__info">
+
+        <div class="info-3 info" id="lastCloneInfo">
+          <h1 class="slider__info__title">Manufactured with the best materials</h1>
+          <p class="slider__info__paragraph">Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+            to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+            experience in this industry, we understand what customers want for their home and office.
+          </p>
+          <a href="#" class="slider__info__cta">
+            <span>Shop now</span>
+            <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+              <path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="info-1 info">
+          <h1 class="slider__info__title">Discover innovative ways to decorate</h1>
+          <p class="slider__info__paragraph">We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.
+          </p>
+          <a href="#" class="slider__info__cta">
+            <span>Shop now</span>
+            <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+              <path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="info-2 info">
+          <h1 class="slider__info__title">We are available all across the globe</h1>
+          <p class="slider__info__paragraph">With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+            Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+            store locator. Any questions? Don't hesitate to contact us today.
+          </p>
+          <a href="#" class="slider__info__cta">
+            <span>Shop now</span>
+            <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+              <path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="info-3 info">
+          <h1 class="slider__info__title">Manufactured with the best materials</h1>
+          <p class="slider__info__paragraph">Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+            to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+            experience in this industry, we understand what customers want for their home and office.
+          </p>
+          <a href="#" class="slider__info__cta">
+            <span>Shop now</span>
+            <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+              <path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="info-1 info" id="firstCloneInfo">
+          <h1 class="slider__info__title">Discover innovative ways to decorate</h1>
+          <p class="slider__info__paragraph">We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.
+          </p>
+          <a href="#" class="slider__info__cta">
+            <span>Shop now</span>
+            <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+              <path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/>
+            </svg>
+          </a>
+        </div>
+
+      </div> 
+    </div>
+
+    <div class="about__image-dark"></div>
+
+    <div class="about__text">
+      <h3>About our furniture</h3>
+      <p>Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+    </div>
+
+    <div class="about__image-light"></div>
+
+  </main>
+  <!--
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+-->
+<script src="script.js"></script>
+</body>
+</html>

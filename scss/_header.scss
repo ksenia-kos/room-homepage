@@ -1,0 +1,124 @@
+.header {
+    width: 100%;
+    height: 110px;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: absolute; // to put it over the slider
+    z-index: 3; // to put it over the slider
+    display: flex;
+    align-items: center;
+    transition: background-color 200ms ease-in-out;
+
+    @media only screen and (min-width: $breakpoint-up-1) {
+        width: auto;
+        padding: 62px;
+    }
+
+    &__menu-icon {
+        position: absolute; // so that header__logo centers itself ignoring header__menu-icon
+        width: 20px;
+        cursor: pointer;
+
+        img {
+            position: absolute; // to center img in the parent div
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        @media only screen and (min-width: $breakpoint-up-1) {
+            display: none;
+        }
+    }
+
+    &__logo {
+        display: block;
+        margin: 0 auto;
+
+        @media only screen and (min-width: $breakpoint-up-1) {
+            margin-right: 24px;
+        }
+    }
+
+    &__nav {
+        display: none;
+        visibility: hidden;
+        transition: visibility 200ms ease-in-out;
+
+        @media only screen and (min-width: $breakpoint-up-1) {
+            display: inline-block;
+            visibility: visible;
+        }
+
+        a {
+            position: relative; // to position the ::after element
+            margin-left: 32px;
+            text-transform: lowercase;
+            letter-spacing: -0.5px;
+            color: #fff;
+
+            &::after { // lines
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -9px;
+                width: 0;
+                height: 2px;
+                margin: 0 auto; // centers the line
+                background-color: $white;
+                transition: width 200ms ease-in-out;
+            }
+
+            &:hover::after {
+                width: 16px;
+            }
+        }
+    }
+
+    .overlay {
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        top: 110px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        transition: all 200ms ease-in-out;
+    }
+
+     // Mobile Menu Open Styles
+     
+    @media only screen and (max-width: 599px) {
+
+        &.open {
+            justify-content: space-between;
+            background-color: #fff;
+    
+            .header__menu-icon {
+                position: static; // to remove position: absolute;
+            }
+    
+            .header__logo {
+                display: none;
+            }
+    
+            .header__nav {
+                display: inline-block;
+                visibility: visible;
+    
+                a {
+                    font-weight: 600;
+                    color: $black;
+                }
+            }
+    
+            .overlay {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}
